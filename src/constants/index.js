@@ -23,6 +23,15 @@ import {
     jobit,
     tripguide,
     threejs,
+    agent1,
+    python,
+    agentsdk,
+    mcp,
+    n8n,
+    react,
+    GiveGaza,
+    FlexPlayGame,
+    GamingPlate
 } from "../assets";
 
 export const navLinks = [{
@@ -55,6 +64,10 @@ const services = [{
         title: "Front End Developer",
         icon: creator,
     },
+    {
+        title: "Agentic AI Developer",
+        icon: agent1,
+    }
 ];
 
 const technologies = [{
@@ -69,10 +82,10 @@ const technologies = [{
         name: "JavaScript",
         icon: javascript,
     },
-    // {
-    //     name: "TypeScript",
-    //     icon: typescript,
-    // },
+    {
+        name: "TypeScript",
+        icon: typescript,
+    },
     {
         name: "React JS",
         icon: reactjs,
@@ -89,10 +102,10 @@ const technologies = [{
         name: "Node JS",
         icon: nodejs,
     },
-    // {
-    //     name: "MongoDB",
-    //     icon: mongodb,
-    // },
+    {
+        name: "MongoDB",
+        icon: mongodb,
+    },
     {
         name: "Three JS",
         icon: threejs,
@@ -105,9 +118,33 @@ const technologies = [{
     //     name: "figma",
     //     icon: figma,
     // },
+    {
+        name: "docker",
+        icon: docker,
+    },
+    {
+        name: "Python",
+        icon: python,
+    },
+    {
+        name: "Agentic SDK",
+        icon: agentsdk,
+    },
+    {
+        name: "MCP",
+        icon: mcp,
+    },
+    {
+        name: "N8N",
+        icon: n8n,
+    },
+    {
+        name: "React",
+        icon: react,
+    },
     // {
-    //     name: "docker",
-    //     icon: docker,
+    //     name: "React",
+    //     icon: react,
     // },
 ];
 
@@ -189,61 +226,93 @@ const testimonials = [{
 ];
 
 const projects = [{
-        name: "Movie browser",
-        description: "Web-base platform that allows users to search through movie database and check movies for details. Currently not mobile friendly.",
+        name: "Give Gaza",
+        description: "Give Gaza is a modern, responsive web application built to support and facilitate donations for humanitarian aid in Gaza. The platform provides an intuitive user experience with a clean interface to raise awareness and encourage contributions..",
         tags: [{
-                name: "react",
+                name: "React",
                 color: "blue-text-gradient",
             },
             {
-                name: "css",
+                name: "BlockChain",
+                color: "orange-text-gradient",
+            },
+            {
+                name: "Mern Stack",
                 color: "green-text-gradient",
             },
             {
-                name: "bootstrap",
+                name: "Css",
                 color: "pink-text-gradient",
             },
+            {
+                name: "Ai",
+                color: "yellow-text-gradient",  
+            },
+            {
+                name: "express",
+                color: "red-text-gradient",
+            },
+            {
+                name: "mongodb",
+                color: "green-text-gradient",
+            },
+            {
+                name: "Tailwind Css",
+                color: "blue-text-gradient",
+            },
+          
+            
         ],
-        image: Moviebrowser,
-        source_code_link: "https://kbinko.github.io/moviebrowser/",
+        image: GiveGaza,
+        source_code_link: "https://give-gaza.vercel.app/",
     },
     {
-        name: "Job IT",
-        description: "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        name: "Gaming Plateform",
+        description: "A sleek, modern gaming platform deployed seamlessly with Vercel, built using Next.js, React, and responsive design principles Attractive presentation of featured games and new releases Personalized spaces for users to track activity, achievements, or favorites . ",
         tags: [{
-                name: "react",
+                name: "Next JS ",
                 color: "blue-text-gradient",
             },
             {
-                name: "restapi",
+                name: "express Js ",
                 color: "green-text-gradient",
             },
             {
-                name: "scss",
+                name: "BlockChain ",
                 color: "pink-text-gradient",
             },
+            {
+                name: "Tailwind CSS",
+                color: "blue-text-gradient",
+            },
         ],
-        image: jobit,
-        source_code_link: "https://github.com/",
+        image: GamingPlate,
+        source_code_link: "https://gaming-plate-form-e87l.vercel.app/",
     },
     {
-        name: "Trip Guide",
-        description: "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        name: "Flex Play Game",
+        description: "A modern, professional landing page inspired by GameDistrict.co, built using Next.js and Tailwind CSS. This UI showcases a sleek, centered layout with sticky navigation, a functional dark/light mode toggle,Tailwind CSS for modern styling  and mobile-first responsive design..",
         tags: [{
                 name: "nextjs",
                 color: "blue-text-gradient",
             },
             {
-                name: "supabase",
+                name: "Tailwind CSS",
                 color: "green-text-gradient",
             },
-            {
-                name: "css",
-                color: "pink-text-gradient",
-            },
+         {
+            name:"express",
+            color: "red-text-gradient",
+         },
+         {
+            name:"mongodb",
+            color: "green-text-gradient",
+         },
+        
+           
         ],
-        image: tripguide,
-        source_code_link: "https://github.com/",
+        image: FlexPlayGame,
+        source_code_link: "https://lighthearted-selkie-78f8dd.netlify.app/",
     },
 ];
 

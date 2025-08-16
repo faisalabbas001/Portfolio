@@ -36,15 +36,18 @@ const About = () => {
         <p className={styles.sectionSubText}>
           Introduction
         </p>
-        <h2 className={styles.sectionHeadText}>Overwiev</h2>
+        <h2 className={styles.sectionHeadText}>Overview</h2>
       </motion.div>
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        I am a web developer with a passion for creating beautiful and functional websites. I have a strong background in web development and I am always looking for new opportunities to learn and grow. I am a fast learner and I am always happy for new challenges. I feel great when i can work in a team full of people that share my passions and interests. Currently I am looking for a job as a web developer, where I can use my skills and knowledge to create amazing websites and web applications. If you are interested in my work, please feel free to contact me using the contact form below.
-      </motion.p>
+I am a proficient Full-Stack Developer dedicated to creating scalable, high-performance web applications. Skilled in frontend and backend technologies, I deliver user-centric digital solutions that balance functionality, performance, and elegant design.
+
+I specialize in Agentic AI, developing intelligent agents and automation solutions to address complex challenges. My expertise in blockchain technology enables me to integrate secure, decentralized systems into innovative applications.
+
+A proactive problem-solver, I thrive in collaborative, innovative settings and am eager to apply my skills in full-stack development, AI, and blockchain to deliver impactful solutions for forward-thinking organizations.       </motion.p>
 
       <div className="mt-20 gap-10 flex flex-wrap">
         {services.map((service, index) => (  
