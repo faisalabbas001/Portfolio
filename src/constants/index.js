@@ -31,7 +31,8 @@ import {
     react,
     GiveGaza,
     FlexPlayGame,
-    GamingPlate
+    GamingPlate,
+    all
 } from "../assets";
 
 export const navLinks = [{
@@ -46,6 +47,15 @@ export const navLinks = [{
         id: "contact",
         title: "Contact",
     },
+    {
+        id: "experiences",
+        title: "Experiences",
+    },
+    {
+        id: "skills",
+        title: "Skills",
+    },
+
 ];
 
 const services = [{
@@ -70,14 +80,8 @@ const services = [{
     }
 ];
 
-const technologies = [{
-        name: "HTML 5",
-        icon: html,
-    },
-    {
-        name: "CSS 3",
-        icon: css,
-    },
+const technologies = [
+   
     {
         name: "JavaScript",
         icon: javascript,
@@ -146,6 +150,7 @@ const technologies = [{
     //     name: "React",
     //     icon: react,
     // },
+    
 ];
 
 const experiences = [{

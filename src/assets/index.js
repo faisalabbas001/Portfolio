@@ -37,6 +37,8 @@ import FlexPlayGame from "./FlexPlayGame.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import GamingPlate from "./GamingPlate.png"
+// import all from "./tech/mcp.png";
+import all from  "./tech/mcp.png"
 
 export {
     logo,
@@ -75,5 +77,7 @@ export {
     react,
     GiveGaza,
     FlexPlayGame,
-    GamingPlate
+    GamingPlate,
+    all,
+    
 };

@@ -1,83 +1,59 @@
-import { Suspense, useEffect, useState } from 'react';
-import { Canvas } from '@react-three/fiber'; 
-import { OrbitControls, Preload, useGLTF } from '@react-three/drei';
-import CanvasLoader from '../Loader';
+import React, { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
 
-const Computers = ({isMobile}) => {
-
-  const computer = useGLTF('./desktop_pc/scene.gltf')
-
-
-  return (
-    <mesh>
-      <hemisphereLight intensity={0.15}
-        groundColor="black" />
-      <pointLight intensity={1} />
-      <spotLight 
-        position={[-20, 50, 10]}
-        angle={0.12}
-        penumbra={1}
-        intensity={1}
-        castShadow
-        shadow-mapSize={1024}
-      />
-      <primitive
-        object={computer.scene} 
-        scale={isMobile ? 0.65 : 0.75}
-        position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
-        rotation={[-0.01, -0.2, -0.1]}
-      />
-    </mesh>
-  )
-}
-
-const ComputersCanvas = () => {
-
-  const [isMobile, setIsMobile] = useState(false);
+const Computers = () => {
+  const [currentTextIndex, setCurrentTextIndex] = useState(0);
+  
+  const texts = [
+    "Frontend Development",
+    "Backend Development", 
+    "Full Stack Development",
+    "Mobile Development",
+    "AI Agents Development"
+  ];
 
   useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentTextIndex((prev) => (prev + 1) % texts.length);
+    }, 3000);
 
-    // Media query for mobile devices 
-    const mediaQuery = window.matchMedia('(max-width: 768px)');
-
-    // Set initial state
-    setIsMobile(mediaQuery.matches);
-
-    // Add event listener
-    const handleMediaQueryChange = (event) => {
-      setIsMobile(event.matches);
-    }
-
-    // Add event listener
-    mediaQuery.addEventListener('change', handleMediaQueryChange);
-
-    // Remove event listener
-    return () => {
-      mediaQuery.removeEventListener('change', handleMediaQueryChange);
-    }
-
-  }, []);
+    return () => clearInterval(interval);
+  }, [texts.length]);
 
   return (
-    <Canvas
-      frameLoop='demand'
-      shadows
-      camera={{
-        position: [20, 3, 5], fov: 25
-        }}
-      gl={{ preserveDrawingBuffer: true }}
-    >
-      <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls
-          enableZoom={false}
-          maxPolarAngle={Math.PI / 2}
-          minPolarAngle={Math.PI / 2}
-        />
-        <Computers isMobile={isMobile} />
-      </Suspense>
-      <Preload all />
-    </Canvas>
-  )
-}
+    <div className="w-full h-full flex items-center justify-center overflow-hidden px-2 sm:px-4">
+      <div className="relative w-full max-w-full">
+        {texts.map((text, index) => (
+          <motion.div
+            key={text}
+            className="absolute w-full text-center px-2"
+            initial={{ 
+              x: "100%", 
+              opacity: 0,
+              scale: 0.8
+            }}
+            animate={{ 
+              x: index === currentTextIndex ? "0%" : index < currentTextIndex ? "-100%" : "100%",
+              opacity: index === currentTextIndex ? 1 : 0,
+              scale: index === currentTextIndex ? 1 : 0.8
+            }}
+            transition={{ 
+              duration: 0.8, 
+              ease: "easeInOut",
+              type: "spring",
+              stiffness: 100
+            }}
+          >
+            <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold bg-gradient-to-r from-purple-400 via-pink-900 to-[#915eff] bg-clip-text text-transparent leading-relaxed break-words hyphens-auto">
+              {text}
+            </h1>
 
-export default ComputersCanvas
+          </motion.div>
+        ))}
+      </div>
+      
+    </div>
+  );
+};
+
+export default Computers;
