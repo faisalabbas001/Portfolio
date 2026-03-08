@@ -12,6 +12,11 @@
   color-scheme: dark;
 }
 
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 .hash-span {
   margin-top: -100px;
   padding-bottom: 100px;
@@ -75,11 +80,24 @@
 
 .pink-text-gradient {
   background: #ec008c;
-  /* fallback for old browsers */
   background: -webkit-linear-gradient(to top, #ec008c, #fc6767);
-  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to top, #ec008c, #fc6767);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.red-text-gradient {
+  background: #e74c3c;
+  background: -webkit-linear-gradient(to top, #e74c3c, #f39c12);
+  background: linear-gradient(to top, #e74c3c, #f39c12);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.yellow-text-gradient {
+  background: #f7971e;
+  background: -webkit-linear-gradient(to top, #f7971e, #ffd200);
+  background: linear-gradient(to top, #f7971e, #ffd200);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -192,4 +210,21 @@
 
 .loader-dots {
   animation: fade-in-up 0.5s ease-out 0.6s both;
+}
+
+/* Line clamp utility */
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Hide scrollbar for horizontal scroll areas */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
 }

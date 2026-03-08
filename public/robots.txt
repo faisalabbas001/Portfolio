@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://faisalabbas001.github.io/Portfolio/sitemap.xml

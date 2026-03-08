@@ -5,34 +5,33 @@ import {
     web,
     javascript,
     typescript,
-    html,
-    css,
     reactjs,
-    redux,
     tailwind,
     nodejs,
     mongodb,
     git,
-    figma,
     docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    Moviebrowser,
-    jobit,
-    tripguide,
     threejs,
     agent1,
     python,
     agentsdk,
     mcp,
     n8n,
-    react,
     GiveGaza,
     FlexPlayGame,
     GamingPlate,
-    all
+    escrowly,
+    kubernetes,
+    kafka,
+    aws,
+    cicd,
+    nestjs,
+    nextjs,
+    postgresql,
+    redis,
+    fastapi,
+    floorplanai,
+    safebridge,
 } from "../assets";
 
 export const navLinks = [{
@@ -40,285 +39,267 @@ export const navLinks = [{
         title: "About",
     },
     {
-        id: "work",
-        title: "Work",
-    },
-    {
-        id: "contact",
-        title: "Contact",
-    },
-    {
         id: "experiences",
-        title: "Experiences",
+        title: "Experience",
     },
     {
         id: "skills",
         title: "Skills",
     },
-
+    {
+        id: "work",
+        title: "Projects",
+    },
+    {
+        id: "contact",
+        title: "Contact",
+    },
 ];
 
 const services = [{
-        title: "Web Developer",
+        title: "Full Stack Applications",
+        subtitle: "End-to-end web solutions",
         icon: web,
     },
     {
-        title: "React Native Developer",
+        title: "Mobile Development",
+        subtitle: "Cross-platform apps",
         icon: mobile,
     },
     {
-        title: "Backend Developer",
+        title: "Scalable Backend Systems",
+        subtitle: "Microservices & APIs",
         icon: backend,
     },
     {
-        title: "Front End Developer",
+        title: "Interactive Interfaces",
+        subtitle: "Pixel-perfect UI/UX",
         icon: creator,
     },
     {
-        title: "Agentic AI Developer",
+        title: "AI & Automation",
+        subtitle: "Agentic AI solutions",
         icon: agent1,
     }
 ];
 
-const technologies = [
-   
+const technologyCategories = [
     {
-        name: "JavaScript",
-        icon: javascript,
-    },
-    {
-        name: "TypeScript",
-        icon: typescript,
-    },
-    {
-        name: "React JS",
-        icon: reactjs,
-    },
-    // {
-    //     name: "Redux Toolkit",
-    //     icon: redux,
-    // },
-    {
-        name: "Tailwind CSS",
-        icon: tailwind,
-    },
-    {
-        name: "Node JS",
-        icon: nodejs,
-    },
-    {
-        name: "MongoDB",
-        icon: mongodb,
-    },
-    {
-        name: "Three JS",
-        icon: threejs,
-    },
-    {
-        name: "git",
-        icon: git,
-    },
-    // {
-    //     name: "figma",
-    //     icon: figma,
-    // },
-    {
-        name: "docker",
-        icon: docker,
-    },
-    {
-        name: "Python",
-        icon: python,
-    },
-    {
-        name: "Agentic SDK",
-        icon: agentsdk,
-    },
-    {
-        name: "MCP",
-        icon: mcp,
-    },
-    {
-        name: "N8N",
-        icon: n8n,
-    },
-    {
-        name: "React",
-        icon: react,
-    },
-    // {
-    //     name: "React",
-    //     icon: react,
-    // },
-    
-];
-
-const experiences = [{
-        title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: starbucks,
-        iconBg: "#383E56",
-        date: "March 2020 - April 2021",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+        category: "Frontend",
+        gradient: "from-cyan-500 to-blue-500",
+        items: [
+            { name: "JavaScript", icon: javascript },
+            { name: "TypeScript", icon: typescript },
+            { name: "React JS", icon: reactjs },
+            { name: "Next.js", icon: nextjs },
+            { name: "Tailwind CSS", icon: tailwind },
+            { name: "Three JS", icon: threejs },
         ],
     },
     {
-        title: "React Native Developer",
-        company_name: "Tesla",
-        icon: tesla,
-        iconBg: "#E6DEDD",
-        date: "Jan 2021 - Feb 2022",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+        category: "Backend",
+        gradient: "from-green-500 to-emerald-500",
+        items: [
+            { name: "Node JS", icon: nodejs },
+            { name: "NestJS", icon: nestjs },
+            { name: "Python", icon: python },
+            { name: "FastAPI", icon: fastapi },
+            { name: "Kafka", icon: kafka },
         ],
     },
     {
-        title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
-        iconBg: "#383E56",
-        date: "Jan 2022 - Jan 2023",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+        category: "Database",
+        gradient: "from-orange-500 to-amber-500",
+        items: [
+            { name: "MongoDB", icon: mongodb },
+            { name: "PostgreSQL", icon: postgresql },
+            { name: "Redis", icon: redis },
         ],
     },
     {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
-        iconBg: "#E6DEDD",
-        date: "Jan 2023 - Present",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+        category: "DevOps & Cloud",
+        gradient: "from-purple-500 to-violet-500",
+        items: [
+            { name: "Docker", icon: docker },
+            { name: "Kubernetes", icon: kubernetes },
+            { name: "AWS", icon: aws },
+            { name: "CI/CD", icon: cicd },
+            { name: "Git", icon: git },
+        ],
+    },
+    {
+        category: "AI & Automation",
+        gradient: "from-pink-500 to-rose-500",
+        items: [
+            { name: "Agentic SDK", icon: agentsdk },
+            { name: "MCP", icon: mcp },
+            { name: "N8N", icon: n8n },
         ],
     },
 ];
 
-const testimonials = [{
-        testimonial: "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-        name: "Sara Lee",
-        designation: "CFO",
-        company: "Acme Co",
-        image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-        testimonial: "I've never met a web developer who truly cares about their clients' success like Rick does.",
-        name: "Chris Brown",
-        designation: "COO",
-        company: "DEF Corp",
-        image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-        testimonial: "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-        name: "Lisa Wang",
-        designation: "CTO",
-        company: "456 Enterprises",
-        image: "https://randomuser.me/api/portraits/women/6.jpg",
-    },
-];
 
 const projects = [{
         name: "Give Gaza",
-        description: "Give Gaza is a modern, responsive web application built to support and facilitate donations for humanitarian aid in Gaza. The platform provides an intuitive user experience with a clean interface to raise awareness and encourage contributions..",
-        tags: [{
-                name: "React",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "BlockChain",
-                color: "orange-text-gradient",
-            },
-            {
-                name: "Mern Stack",
-                color: "green-text-gradient",
-            },
-            {
-                name: "Css",
-                color: "pink-text-gradient",
-            },
-            {
-                name: "Ai",
-                color: "yellow-text-gradient",  
-            },
-            {
-                name: "express",
-                color: "red-text-gradient",
-            },
-            {
-                name: "mongodb",
-                color: "green-text-gradient",
-            },
-            {
-                name: "Tailwind Css",
-                color: "blue-text-gradient",
-            },
-          
-            
+        slug: "give-gaza",
+        description: "Give Gaza is a modern, responsive web application built to support and facilitate donations for humanitarian aid in Gaza. The platform provides an intuitive user experience with a clean interface to raise awareness and encourage contributions.",
+        longDescription: "Give Gaza is a humanitarian donation platform designed to make contributing to relief efforts in Gaza simple and transparent. The platform features a clean, modern interface with real-time donation tracking, blockchain-verified transactions for full transparency, and AI-powered content to raise awareness about the situation on the ground.",
+        features: [
+            "Blockchain-verified donation tracking for full transparency",
+            "Real-time donation counter and progress tracking",
+            "AI-powered awareness content generation",
+            "Responsive design optimized for all devices",
+            "Secure payment processing with multiple options",
+            "Multi-language support for global reach",
+        ],
+        challenges: "The key challenge was building trust with donors by ensuring complete transparency. We integrated blockchain technology to create an immutable record of every donation, so contributors can verify exactly where their funds go.",
+        tags: [
+            { name: "React", color: "blue-text-gradient" },
+            { name: "BlockChain", color: "orange-text-gradient" },
+            { name: "MERN Stack", color: "green-text-gradient" },
+            { name: "Tailwind CSS", color: "blue-text-gradient" },
+            { name: "AI", color: "yellow-text-gradient" },
+            { name: "Express", color: "red-text-gradient" },
+            { name: "MongoDB", color: "green-text-gradient" },
         ],
         image: GiveGaza,
         source_code_link: "https://give-gaza.vercel.app/",
     },
     {
-        name: "Gaming Plateform",
-        description: "A sleek, modern gaming platform deployed seamlessly with Vercel, built using Next.js, React, and responsive design principles Attractive presentation of featured games and new releases Personalized spaces for users to track activity, achievements, or favorites . ",
-        tags: [{
-                name: "Next JS ",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "express Js ",
-                color: "green-text-gradient",
-            },
-            {
-                name: "BlockChain ",
-                color: "pink-text-gradient",
-            },
-            {
-                name: "Tailwind CSS",
-                color: "blue-text-gradient",
-            },
+        name: "Gaming Platform",
+        slug: "gaming-platform",
+        description: "A sleek, modern gaming platform deployed with Vercel, built using Next.js, React, and responsive design principles. Features attractive presentation of games and personalized user spaces.",
+        longDescription: "A next-generation gaming platform that brings together game discovery, community features, and personalized experiences in one sleek interface. Built with performance-first architecture using Next.js SSR for instant page loads and optimized image delivery for game artwork.",
+        features: [
+            "Server-side rendering for lightning-fast page loads",
+            "Dynamic game catalog with filtering and search",
+            "Personalized user dashboard for tracking activity",
+            "Featured games carousel with smooth animations",
+            "Achievement tracking and favorites system",
+            "Dark/light theme with seamless transitions",
+        ],
+        challenges: "Optimizing image-heavy game catalog pages for fast load times was critical. Implemented Next.js Image optimization, lazy loading, and skeleton states to ensure smooth browsing even on slow connections.",
+        tags: [
+            { name: "Next.js", color: "blue-text-gradient" },
+            { name: "Express.js", color: "green-text-gradient" },
+            { name: "BlockChain", color: "pink-text-gradient" },
+            { name: "Tailwind CSS", color: "blue-text-gradient" },
         ],
         image: GamingPlate,
         source_code_link: "https://gaming-plate-form-e87l.vercel.app/",
     },
     {
         name: "Flex Play Game",
-        description: "A modern, professional landing page inspired by GameDistrict.co, built using Next.js and Tailwind CSS. This UI showcases a sleek, centered layout with sticky navigation, a functional dark/light mode toggle,Tailwind CSS for modern styling  and mobile-first responsive design..",
-        tags: [{
-                name: "nextjs",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "Tailwind CSS",
-                color: "green-text-gradient",
-            },
-         {
-            name:"express",
-            color: "red-text-gradient",
-         },
-         {
-            name:"mongodb",
-            color: "green-text-gradient",
-         },
-        
-           
+        slug: "flex-play-game",
+        description: "A modern, professional gaming landing page built using Next.js and Tailwind CSS with sticky navigation, dark/light mode toggle, and mobile-first responsive design.",
+        longDescription: "Flex Play Game is a premium gaming landing page that demonstrates pixel-perfect UI implementation and attention to design detail. Inspired by industry-leading gaming sites, it features fluid animations, responsive layouts, and a polished user experience across all device sizes.",
+        features: [
+            "Sticky navigation with scroll-aware state changes",
+            "Functional dark/light mode toggle with smooth transitions",
+            "Mobile-first responsive design for all screen sizes",
+            "Smooth scroll animations and micro-interactions",
+            "Optimized performance with lazy loading",
+            "Clean, centered layout with modern typography",
+        ],
+        challenges: "Achieving pixel-perfect responsiveness across all breakpoints while maintaining smooth animations and theme transitions required careful CSS architecture and performance optimization.",
+        tags: [
+            { name: "Next.js", color: "blue-text-gradient" },
+            { name: "Tailwind CSS", color: "green-text-gradient" },
+            { name: "Express", color: "red-text-gradient" },
+            { name: "MongoDB", color: "green-text-gradient" },
         ],
         image: FlexPlayGame,
         source_code_link: "https://lighthearted-selkie-78f8dd.netlify.app/",
     },
+    {
+        name: "Escrowly",
+        slug: "escrowly",
+        description: "A full-stack crypto escrow platform enabling secure P2P transactions with multi-chain wallet support, KYC compliance, and real-time dispute resolution. Built with 11 NestJS microservices and Kafka event pipeline.",
+        longDescription: "Escrowly is an enterprise-grade cryptocurrency escrow platform that enables secure peer-to-peer transactions across multiple blockchain networks. The platform features 11 NestJS microservices communicating through a Kafka event pipeline, ensuring scalability and reliability for high-volume transaction processing.",
+        features: [
+            "Multi-chain support: Solana, Ethereum, TRON, BSC, Polygon",
+            "11 NestJS microservices with Kafka event pipeline",
+            "KYC/AML compliance with automated verification",
+            "Real-time dispute resolution system",
+            "Automated escrow release with smart contracts",
+            "Admin dashboard with analytics and monitoring",
+            "Docker containerized deployment",
+            "JWT authentication with role-based access control",
+        ],
+        challenges: "Architecting 11 microservices to communicate reliably through Kafka while handling real-time multi-chain wallet interactions was the core challenge. Implemented event sourcing patterns and idempotent transaction processing to ensure zero fund loss.",
+        tags: [
+            { name: "NestJS", color: "red-text-gradient" },
+            { name: "React", color: "blue-text-gradient" },
+            { name: "TypeScript", color: "blue-text-gradient" },
+            { name: "Kafka", color: "green-text-gradient" },
+            { name: "PostgreSQL", color: "blue-text-gradient" },
+            { name: "Docker", color: "pink-text-gradient" },
+            { name: "Microservices", color: "orange-text-gradient" },
+            { name: "Blockchain", color: "yellow-text-gradient" },
+        ],
+        image: escrowly,
+        source_code_link: "https://escrowly-frontend-client.vercel.app/",
+    },
+    {
+        name: "AI Floor Plan Generator",
+        slug: "ai-floor-plan-generator",
+        description: "An enterprise-grade AI platform that generates complete architectural floor plans from text descriptions using GPT-4o. Supports 2D/3D views, DXF/DWG export, and Autodesk ACC integration.",
+        longDescription: "An enterprise-grade AI platform that revolutionizes architectural design by generating complete floor plans from natural language descriptions. Using GPT-4o for intelligent space planning, the platform produces professional architectural drawings with 2D/3D views, auto-generated elevations, sections, and schedules — all exportable to industry-standard DXF/DWG formats.",
+        features: [
+            "GPT-4o powered floor plan generation from text",
+            "Interactive 2D/3D floor plan visualization",
+            "Auto-generated elevations, sections, and schedules",
+            "Export to DXF/DWG industry-standard formats",
+            "Building code compliance checking",
+            "Version control for design iterations",
+            "Team collaboration with shared workspaces",
+            "Autodesk ACC integration for professional workflows",
+        ],
+        challenges: "Converting AI-generated spatial data into precise architectural drawings that meet building code standards required building a custom rendering engine with Three.js and developing algorithms to validate structural integrity and code compliance.",
+        tags: [
+            { name: "Next.js", color: "blue-text-gradient" },
+            { name: "TypeScript", color: "blue-text-gradient" },
+            { name: "Node.js", color: "green-text-gradient" },
+            { name: "PostgreSQL", color: "blue-text-gradient" },
+            { name: "OpenAI", color: "green-text-gradient" },
+            { name: "Three.js", color: "pink-text-gradient" },
+            { name: "Tailwind CSS", color: "blue-text-gradient" },
+            { name: "Autodesk API", color: "orange-text-gradient" },
+        ],
+        image: floorplanai,
+        source_code_link: "https://ai-floors-plan-generator.vercel.app/",
+    },
+    {
+        name: "SAFE-Bridge",
+        slug: "safe-bridge",
+        description: "AI-powered Academic Engagement Intelligence Platform built solo. Transforms anonymous feedback into actionable insights using GPT-4o-mini classification, custom Psychological Safety Index, and predictive analytics.",
+        longDescription: "SAFE-Bridge is an AI-powered Academic Engagement Intelligence Platform built entirely solo as a student project. It transforms 100% anonymous student feedback into actionable insights for educators using GPT-4o-mini for real-time text classification, a custom Psychological Safety Index (PSI), and predictive analytics with linear regression models.",
+        features: [
+            "GPT-4o-mini powered real-time feedback classification",
+            "Custom Psychological Safety Index (PSI) algorithm",
+            "Predictive analytics with linear regression models",
+            "14 database models with Prisma ORM",
+            "12 backend services with Express.js",
+            "30+ React components with Zustand state management",
+            "3-language support (English, Urdu, Arabic RTL)",
+            "100% anonymous feedback collection",
+            "Statistical outlier detection using IQR method",
+            "Department-level analytics and reporting",
+        ],
+        challenges: "Building an enterprise-grade platform solo — from 14 database models to 12 backend services to 30+ frontend components — required careful architecture planning. The custom PSI algorithm needed extensive research into psychological safety measurement frameworks.",
+        tags: [
+            { name: "Next.js", color: "blue-text-gradient" },
+            { name: "TypeScript", color: "blue-text-gradient" },
+            { name: "Express", color: "green-text-gradient" },
+            { name: "PostgreSQL", color: "blue-text-gradient" },
+            { name: "Prisma", color: "pink-text-gradient" },
+            { name: "OpenAI", color: "green-text-gradient" },
+            { name: "Tailwind CSS", color: "blue-text-gradient" },
+            { name: "Zustand", color: "orange-text-gradient" },
+        ],
+        image: safebridge,
+        source_code_link: "https://safebridgeedu.vercel.app/",
+    },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologyCategories, projects };
